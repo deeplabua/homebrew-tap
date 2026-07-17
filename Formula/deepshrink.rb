@@ -5,18 +5,19 @@ class Deepshrink < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/deeplabua/deepshrink/releases/download/v0.2.0/deepshrink-aarch64-apple-darwin.tar.xz"
-      sha256 "3cd409a444b77a999cbcf784cf796dd619f758afe6149d36e81dbe08469fc1e6"
+      sha256 "ff4789cf3e4866433c69be0393bfce81234835466a95a8c4cd3f6a46b2b58e8d"
     end
     if Hardware::CPU.intel?
       url "https://github.com/deeplabua/deepshrink/releases/download/v0.2.0/deepshrink-x86_64-apple-darwin.tar.xz"
-      sha256 "fb8f3188d5ee5a989696bccfb403ad942e730bf2c09ff342a9dd6920d08b97a7"
+      sha256 "6bf9234c5e8b0c6dd3d052c2efe1c31d14867e0c7d40fbb29d36b3004b6a4d79"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/deeplabua/deepshrink/releases/download/v0.2.0/deepshrink-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "131564a5c9e3d746d8af49c2ea0ddcf0b0e48c5689b567c37fe666d7de4528fa"
+    sha256 "641d5ec8eaa979035d5d855eef60a8d246960b6beba1595f072a785a29a6946f"
   end
   license any_of: ["MIT", "Apache-2.0"]
+  depends_on "ffmpeg"
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":     {},
