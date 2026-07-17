@@ -1,20 +1,20 @@
 class Deepshrink < Formula
   desc "Shrink media to a target size with one command. Local, private, no watermarks."
   homepage "https://deepshrink.tools"
-  version "0.2.0"
+  version "0.2.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/deeplabua/deepshrink/releases/download/v0.2.0/deepshrink-aarch64-apple-darwin.tar.xz"
-      sha256 "ff4789cf3e4866433c69be0393bfce81234835466a95a8c4cd3f6a46b2b58e8d"
+      url "https://github.com/deeplabua/deepshrink/releases/download/v0.2.1/deepshrink-aarch64-apple-darwin.tar.xz"
+      sha256 "7255560332f5eecab09225ad31657667b863e7805e724db228ec98e98750b623"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/deeplabua/deepshrink/releases/download/v0.2.0/deepshrink-x86_64-apple-darwin.tar.xz"
-      sha256 "6bf9234c5e8b0c6dd3d052c2efe1c31d14867e0c7d40fbb29d36b3004b6a4d79"
+      url "https://github.com/deeplabua/deepshrink/releases/download/v0.2.1/deepshrink-x86_64-apple-darwin.tar.xz"
+      sha256 "50547bfcfa3148b3d6257297ad64882da94bdd1737e73daacf71dcd773b7b2cc"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/deeplabua/deepshrink/releases/download/v0.2.0/deepshrink-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "641d5ec8eaa979035d5d855eef60a8d246960b6beba1595f072a785a29a6946f"
+    url "https://github.com/deeplabua/deepshrink/releases/download/v0.2.1/deepshrink-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "4e369e0b2c8983eddc162d8f29f4ec16f50b51b80da0fbd9abd02194d7a40ac7"
   end
   license any_of: ["MIT", "Apache-2.0"]
   depends_on "ffmpeg"
