@@ -1,20 +1,20 @@
 class Deepdoc < Formula
   desc "Any document to clean Markdown, in one command. Pure Rust, one static binary."
   homepage "https://github.com/deeplabua/deepdoc"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/deeplabua/deepdoc/releases/download/v0.1.0/deepdoc-aarch64-apple-darwin.tar.xz"
-      sha256 "954cdf804535c579b5723e058d9ea4b5148ed5b8306ef816eab2424244a5c1b0"
+      url "https://github.com/deeplabua/deepdoc/releases/download/v0.1.1/deepdoc-aarch64-apple-darwin.tar.xz"
+      sha256 "821793a24c7058821f9510b361c52f6f00f6445d0e509508cae1d7776200fc53"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/deeplabua/deepdoc/releases/download/v0.1.0/deepdoc-x86_64-apple-darwin.tar.xz"
-      sha256 "1d0328e57b8a7838431acce5c084ccdb21687b1e2c465ca1cb6880044c6e50db"
+      url "https://github.com/deeplabua/deepdoc/releases/download/v0.1.1/deepdoc-x86_64-apple-darwin.tar.xz"
+      sha256 "d7a6fca8392492cc4863ade57a5d77fb664011080a2add8a384bec03e07e4f68"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/deeplabua/deepdoc/releases/download/v0.1.0/deepdoc-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "516634868a89fc7ad9f367b8e6f262f96e7ed7c236a50075d32d122ccdf04a6e"
+    url "https://github.com/deeplabua/deepdoc/releases/download/v0.1.1/deepdoc-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "17660d4f1f599e00e6e550be7c82c6961f10bd2edd8cf8bb13e3cb0d686d664f"
   end
   license any_of: ["MIT", "Apache-2.0"]
 
