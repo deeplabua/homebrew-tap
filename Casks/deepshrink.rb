@@ -10,7 +10,7 @@ cask "deepshrink" do
   # The app updates itself via the built-in Tauri updater, so Homebrew should not
   # try to bump it from the tap on every `brew upgrade`.
   auto_updates true
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "DeepShrink.app"
 
