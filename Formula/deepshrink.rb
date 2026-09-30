@@ -1,20 +1,20 @@
 class Deepshrink < Formula
   desc "Shrink media to a target size with one command. Local, private, no watermarks."
   homepage "https://deepshrink.tools"
-  version "0.3.4"
+  version "0.3.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/deeplabua/deepshrink/releases/download/v0.3.4/deepshrink-aarch64-apple-darwin.tar.xz"
-      sha256 "20ec6756f02cd9e07ccd72eee720eb1321662a19b1d786bf320ab2c93bfdf735"
+      url "https://github.com/deeplabua/deepshrink/releases/download/v0.3.5/deepshrink-aarch64-apple-darwin.tar.xz"
+      sha256 "c622f6b412ca643cfc12e84119848bc4412cd13a5caf47c82a89d2a73e97bc43"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/deeplabua/deepshrink/releases/download/v0.3.4/deepshrink-x86_64-apple-darwin.tar.xz"
-      sha256 "f26cbcf62b8becfb588433005e0118556e1615c122e67cfa34e49e4efb60aecb"
+      url "https://github.com/deeplabua/deepshrink/releases/download/v0.3.5/deepshrink-x86_64-apple-darwin.tar.xz"
+      sha256 "4992850a0552caf9795f86ac455a6242e3e13f2c3e40fe160a3d5433c4401ee8"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/deeplabua/deepshrink/releases/download/v0.3.4/deepshrink-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "8122d3d9ceea2a4d088425ad6b5ee0dcfa196a3c4812e79a8b5e0775a34a92e1"
+    url "https://github.com/deeplabua/deepshrink/releases/download/v0.3.5/deepshrink-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "1c78924781f29fccbdf66010d4324f626829973e33dd2ab93f9bddf19a85455e"
   end
   license any_of: ["MIT", "Apache-2.0"]
   depends_on "ffmpeg"
@@ -42,9 +42,15 @@ class Deepshrink < Formula
   end
 
   def install
-    bin.install "deepshrink" if OS.mac? && Hardware::CPU.arm?
-    bin.install "deepshrink" if OS.mac? && Hardware::CPU.intel?
-    bin.install "deepshrink" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "deepshrink"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "deepshrink"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "deepshrink"
+    end
 
     install_binary_aliases!
 
