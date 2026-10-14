@@ -1,6 +1,6 @@
 class Deepshrink < Formula
   desc "Shrink media to a target size with one command. Local, private, no watermarks."
-  homepage "https://deepshrink.tools"
+  homepage "https://deeplab.tools/products/deepshrink/"
   version "0.3.15"
   if OS.mac?
     if Hardware::CPU.arm?
