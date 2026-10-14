@@ -5,7 +5,7 @@ cask "deepshrink" do
   url "https://github.com/deeplabua/deepshrink-desktop-releases/releases/download/v#{version}/deepshrink_#{version}_universal.dmg"
   name "DeepShrink"
   desc "Compress media to a target size, locally"
-  homepage "https://deepshrink.tools"
+  homepage "https://deeplab.tools/products/deepshrink/"
 
   # The app updates itself via the built-in Tauri updater, so Homebrew should not
   # try to bump it from the tap on every `brew upgrade`.
