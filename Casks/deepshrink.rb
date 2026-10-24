@@ -1,6 +1,6 @@
 cask "deepshrink" do
-  version "0.3.2"
-  sha256 "270c34816dd8d64255848789caecb2d7e304d6d79f084625e025fc315c3856b6"
+  version "0.3.3"
+  sha256 "abb5d3396aa4d8e97cabf12c84b9b75e7c05b8762f3efdf0293db1136fa7b727"
 
   url "https://github.com/deeplabua/deepshrink-desktop-releases/releases/download/v#{version}/deepshrink_#{version}_universal.dmg"
   name "DeepShrink"
@@ -21,3 +21,4 @@ cask "deepshrink" do
     "~/Library/Saved Application State/tools.deeplab.deepshrink.savedState",
   ]
 end
+
