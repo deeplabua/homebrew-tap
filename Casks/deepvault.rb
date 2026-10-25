@@ -1,6 +1,6 @@
 cask "deepvault" do
-  version "0.1.0"
-  sha256 "7ee890932970eed0dfb3513c40227e203519585baad123fabf9759b07745ae72"
+  version "0.1.1"
+  sha256 "f7ad1ca61b47c24bb43dc98dc39be1b0b3f08090f6daa43c1d2a772d72d45cc4"
 
   url "https://github.com/deeplabua/deepvault-desktop-releases/releases/download/v#{version}/DeepVault-#{version}.dmg"
   name "DeepVault"
