@@ -1,6 +1,6 @@
 cask "deepsnap" do
-  version "0.8.3"
-  sha256 "39e3d25c34f631636d349a53049e9a13449158c13e99e960e65542d90b5407b9"
+  version "0.8.4"
+  sha256 "22d8933c18afb5575085986c6a0ddc76e0e208855dcddbbaeaefd5fa858ff045"
 
   url "https://github.com/deeplabua/deepsnap-releases/releases/download/v#{version}/DeepSnap-#{version}.dmg"
   name "DeepSnap"
