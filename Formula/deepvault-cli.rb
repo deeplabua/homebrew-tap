@@ -1,8 +1,8 @@
 class DeepvaultCli < Formula
   desc "dv: run commands with secrets from DeepVault, after Touch ID"
   homepage "https://deeplab.tools/products/deepvault/"
-  url "https://github.com/deeplabua/deepvault-desktop-releases/releases/download/v0.1.2/deepvault-cli-0.1.2.zip"
-  sha256 "f6e17e1aecce6d22ba1b459bf71faea11731cb6cf0e31d0fb09434895c34557d"
+  url "https://github.com/deeplabua/deepvault-desktop-releases/releases/download/cli-v0.1.3/deepvault-cli-0.1.3.zip"
+  sha256 "07c48356eb287ef3590e2ac47847bf8dfbda2001eb178cbca576acd173889173"
   license :cannot_represent
 
   depends_on macos: :sonoma
