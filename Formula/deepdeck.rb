@@ -1,20 +1,20 @@
 class Deepdeck < Formula
   desc "A terminal task board for people running several AI coding agents at once."
   homepage "https://github.com/deeplabua/deepdeck"
-  version "0.4.3"
+  version "0.5.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/deeplabua/deepdeck/releases/download/v0.4.3/deepdeck-aarch64-apple-darwin.tar.xz"
-      sha256 "dd24c495132c1b2720d4f1d06bcb7a0c9a7dc71648282632e6abe084d941ed2e"
+      url "https://github.com/deeplabua/deepdeck/releases/download/v0.5.0/deepdeck-aarch64-apple-darwin.tar.xz"
+      sha256 "52930f26b1d2039b38e117522034eb6c268e4fd0424bbccddb401e1066a98073"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/deeplabua/deepdeck/releases/download/v0.4.3/deepdeck-x86_64-apple-darwin.tar.xz"
-      sha256 "cf657b00743b16da2319cfc4f162287881412e39d59e15cd3b4bbcf87fcb3502"
+      url "https://github.com/deeplabua/deepdeck/releases/download/v0.5.0/deepdeck-x86_64-apple-darwin.tar.xz"
+      sha256 "6528c99f317804aed86cbeaee9615138bcf18e865223d8f1bbd5fe91beaf53d6"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/deeplabua/deepdeck/releases/download/v0.4.3/deepdeck-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "52dccc3e296183b5157a19e15143d128508f3bb623774c5bc3b551712570d65c"
+    url "https://github.com/deeplabua/deepdeck/releases/download/v0.5.0/deepdeck-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "b64cc064b1a5327abf62136af4c4162f8cc181bcf0c00865913aa43f8b78f41f"
   end
   license any_of: ["MIT", "Apache-2.0"]
 
