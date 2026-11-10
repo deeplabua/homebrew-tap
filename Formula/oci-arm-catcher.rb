@@ -1,25 +1,25 @@
 class OciArmCatcher < Formula
   desc "Grab Oracle Cloud's free ARM (A1.Flex) capacity the moment it appears — one binary, no OCI CLI"
   homepage "https://deeplab.tools"
-  version "0.1.3"
+  version "0.1.4"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/deeplabua/oci-arm-catcher/releases/download/v0.1.3/oci-arm-catcher-aarch64-apple-darwin.tar.xz"
-      sha256 "37282c02ae9ff0560c59696d7230494f5864e7fa45fa5844dad7cae977212347"
+      url "https://github.com/deeplabua/oci-arm-catcher/releases/download/v0.1.4/oci-arm-catcher-aarch64-apple-darwin.tar.xz"
+      sha256 "cfcd57e1d844533a6c3ce5b35e8c0477c453137f2e5031fda85d30bd05f065db"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/deeplabua/oci-arm-catcher/releases/download/v0.1.3/oci-arm-catcher-x86_64-apple-darwin.tar.xz"
-      sha256 "dd1e2cee8928af75e9ff83b43239d20c367999fa5cacb82e5c62d5f74abde715"
+      url "https://github.com/deeplabua/oci-arm-catcher/releases/download/v0.1.4/oci-arm-catcher-x86_64-apple-darwin.tar.xz"
+      sha256 "cb4021534552a576b7434178d34e2c2238d271f44ab1a2a47930b2a7338639d3"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/deeplabua/oci-arm-catcher/releases/download/v0.1.3/oci-arm-catcher-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "400f1309f59418e378f4567ddff7ec08a012e61e6f20491e05a3c3324395b28a"
+      url "https://github.com/deeplabua/oci-arm-catcher/releases/download/v0.1.4/oci-arm-catcher-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "8d2b743f76579addc5ed039ea3e18acba7a21b6e4b953d59bf345340756cab9b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/deeplabua/oci-arm-catcher/releases/download/v0.1.3/oci-arm-catcher-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "e09589dbe446207aa7546d1f03b6d12f7232813f7b079b23f78a9f81722e9d37"
+      url "https://github.com/deeplabua/oci-arm-catcher/releases/download/v0.1.4/oci-arm-catcher-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "4cde2af2d3c8154b17b85d937df2bd0336221a7612f692c93296a121dc84a6f0"
     end
   end
   license "MIT"
