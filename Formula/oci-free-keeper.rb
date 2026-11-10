@@ -1,25 +1,25 @@
 class OciFreeKeeper < Formula
   desc "Keep your Oracle Cloud Always Free instances from being reclaimed as idle — know how close they are, before Oracle does"
   homepage "https://deeplab.tools"
-  version "0.1.2"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/deeplabua/oci-free-keeper/releases/download/v0.1.2/oci-free-keeper-aarch64-apple-darwin.tar.xz"
-      sha256 "cbabe39c91a64a45a873c336462ad457a287bbaa2d7bfd028eeb2e5e3eb139cf"
+      url "https://github.com/deeplabua/oci-free-keeper/releases/download/v0.2.0/oci-free-keeper-aarch64-apple-darwin.tar.xz"
+      sha256 "a45d79fb1d0a1ed9531eddb1a5b58727b03bb651c5dcdc0a4cfb1f0cec8f6ab9"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/deeplabua/oci-free-keeper/releases/download/v0.1.2/oci-free-keeper-x86_64-apple-darwin.tar.xz"
-      sha256 "4acb4d2a6c03d02a90969c63c7c191da13ddfd2de18a9f40a7fd99f7a8cb5085"
+      url "https://github.com/deeplabua/oci-free-keeper/releases/download/v0.2.0/oci-free-keeper-x86_64-apple-darwin.tar.xz"
+      sha256 "eea9450fe6e72c434c1dd826f2a1fa2b5cd50a2f1b305f15dc15f1ded82a2de1"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/deeplabua/oci-free-keeper/releases/download/v0.1.2/oci-free-keeper-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "7ac9bb65562ec7fc4f51ce89ab278641fc80a65c2af6888bf7b835e64c530770"
+      url "https://github.com/deeplabua/oci-free-keeper/releases/download/v0.2.0/oci-free-keeper-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "30c998566a9e1f67ec062f88f3a7a68ca0378f729553209cdb15cf1f491237eb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/deeplabua/oci-free-keeper/releases/download/v0.1.2/oci-free-keeper-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "5db62fe35f140bbf6760ad6323141c9bb8fd2effea0c20f493cd9c18108f461a"
+      url "https://github.com/deeplabua/oci-free-keeper/releases/download/v0.2.0/oci-free-keeper-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "69a439a9bcda978eb4bb8d61a1fb353c78c77e1f98415336f47453e8b311d607"
     end
   end
   license "MIT"
