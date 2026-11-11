@@ -1,25 +1,25 @@
 class OciFreeAudit < Formula
   desc "Will Oracle charge me? A read-only check of your OCI tenancy against the Always Free limits and your actual bill"
   homepage "https://deeplab.tools"
-  version "0.4.1"
+  version "0.5.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/deeplabua/oci-free-audit/releases/download/v0.4.1/oci-free-audit-aarch64-apple-darwin.tar.xz"
-      sha256 "4498afdc942de302e25486d719a034148bee2b76523be3f948a84de5716fca36"
+      url "https://github.com/deeplabua/oci-free-audit/releases/download/v0.5.0/oci-free-audit-aarch64-apple-darwin.tar.xz"
+      sha256 "afb44b9de3ab6241901dbb5042aa42254b53894b33faca4a3783f4563176970c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/deeplabua/oci-free-audit/releases/download/v0.4.1/oci-free-audit-x86_64-apple-darwin.tar.xz"
-      sha256 "8fd39c996ff67a13a4b3386bf2d2fe3e17dd9613c256c05c1fa38334d6873610"
+      url "https://github.com/deeplabua/oci-free-audit/releases/download/v0.5.0/oci-free-audit-x86_64-apple-darwin.tar.xz"
+      sha256 "e47d5ef77fb72956cb1e1725a2c85c5f1aba75f2c6e60f098938322cd6a55983"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/deeplabua/oci-free-audit/releases/download/v0.4.1/oci-free-audit-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "3fae4da3456c1f524c4f873f72b0b55763a66f9eedf7b2b05d1625392a8904d1"
+      url "https://github.com/deeplabua/oci-free-audit/releases/download/v0.5.0/oci-free-audit-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "1cff1c95857d16ade94b74baf77dbfe433fd84f90d2e7317b0f5f399d173569d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/deeplabua/oci-free-audit/releases/download/v0.4.1/oci-free-audit-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "8fe9efb480ed6a8b5e9f63ac8073516e8c4ac61ecff97e199c73b3385b578613"
+      url "https://github.com/deeplabua/oci-free-audit/releases/download/v0.5.0/oci-free-audit-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "60e19c80ade059b93ca7e94201cf6b421a28006fce43a3e2f8c332d7ee603b40"
     end
   end
   license "MIT"
